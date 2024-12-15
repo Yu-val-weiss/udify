@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "udify"
+version = "0.1.0"
+description = "A single model that parses Universal Dependencies across 75 languages. Given a sentence, jointly predicts part-of-speech tags, morphology tags, lemmas, and dependency trees."
+authors = ["Dan Kondratyuk",  "Milan Straka", "Yuval Weiss"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.9"
+allennlp = { git = "https://github.com/Yu-val-weiss/allennlp.git" }
+torch = "^2.5.1"
+tensorflow = "^2.18.0"
+pandas = "^2.2.3"
+jupyter = "^1.1.1"
+conllu = "^6.0.0"
+pytorch-pretrained-bert = "^0.6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
